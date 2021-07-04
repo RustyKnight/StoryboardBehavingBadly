@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rotate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="760" text="This is a title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wai-er-tjf">
+                                <rect key="frame" x="118" y="0.0" width="660" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5es-j2-J5J">
+                                <rect key="frame" x="786" y="3.6666666666666643" width="46" height="30.000000000000004"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sp0-4b-84F">
+                                <rect key="frame" x="243" y="45" width="609" height="348"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl8-IX-yNm">
+                                <rect key="frame" x="64" y="3.6666666666666643" width="46" height="30.000000000000004"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-2N-B5l">
+                                <rect key="frame" x="60" y="44.999999999999986" width="175" height="218.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="IdM-0H-i64"/>
+                                    <constraint firstAttribute="width" constant="250" id="fii-jV-Tq5"/>
+                                    <constraint firstAttribute="width" secondItem="KPl-2N-B5l" secondAttribute="height" multiplier="0.8" id="mqF-h7-6Yf"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IdM-0H-i64"/>
+                                        <exclude reference="fii-jV-Tq5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="IdM-0H-i64"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fii-jV-Tq5"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="top" secondItem="Wai-er-tjf" secondAttribute="bottom" id="1ee-kz-oul">
+                                <variation key="heightClass=compact-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BhK-3H-NAQ"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="leading" secondItem="KPl-2N-B5l" secondAttribute="trailing" constant="8" id="BhW-BK-6tX"/>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="top" secondItem="Wai-er-tjf" secondAttribute="bottom" constant="8" id="KY6-EZ-dII"/>
+                            <constraint firstItem="kl8-IX-yNm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NcB-rp-4uT"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OWV-C2-vgb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sp0-4b-84F" secondAttribute="trailing" id="Rcb-Wd-5qe"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="top" secondItem="KPl-2N-B5l" secondAttribute="bottom" constant="8" id="Rob-cU-kBf"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Slc-D7-6ui"/>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="top" secondItem="Wai-er-tjf" secondAttribute="bottom" id="TpC-Zb-6Rp"/>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VS8-ru-uHa"/>
+                            <constraint firstItem="Wai-er-tjf" firstAttribute="leading" secondItem="kl8-IX-yNm" secondAttribute="trailing" constant="8" id="ZQX-N1-otz"/>
+                            <constraint firstItem="Wai-er-tjf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bGe-Cd-CAn"/>
+                            <constraint firstItem="kl8-IX-yNm" firstAttribute="centerY" secondItem="Wai-er-tjf" secondAttribute="centerY" id="dZe-me-siX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5es-j2-J5J" secondAttribute="trailing" constant="20" id="eXH-sG-5ca"/>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h1b-Uq-FuI"/>
+                            <constraint firstItem="KPl-2N-B5l" firstAttribute="top" secondItem="Wai-er-tjf" secondAttribute="bottom" constant="8" id="j6b-Lw-rzu"/>
+                            <constraint firstItem="5es-j2-J5J" firstAttribute="leading" secondItem="Wai-er-tjf" secondAttribute="trailing" constant="8" id="kEi-3W-Spu"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="top" secondItem="Wai-er-tjf" secondAttribute="bottom" constant="8" id="nDD-Ba-MoG"/>
+                            <constraint firstItem="5es-j2-J5J" firstAttribute="centerY" secondItem="Wai-er-tjf" secondAttribute="centerY" id="oal-nS-1ez"/>
+                            <constraint firstItem="Wai-er-tjf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pCQ-fa-lse"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t1S-tm-YYj"/>
+                            <constraint firstItem="Sp0-4b-84F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zcd-zb-svD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Rcb-Wd-5qe"/>
+                                <exclude reference="1ee-kz-oul"/>
+                                <exclude reference="BhK-3H-NAQ"/>
+                                <exclude reference="KY6-EZ-dII"/>
+                                <exclude reference="TpC-Zb-6Rp"/>
+                                <exclude reference="VS8-ru-uHa"/>
+                                <exclude reference="h1b-Uq-FuI"/>
+                                <exclude reference="j6b-Lw-rzu"/>
+                                <exclude reference="BhW-BK-6tX"/>
+                                <exclude reference="OWV-C2-vgb"/>
+                                <exclude reference="Rob-cU-kBf"/>
+                                <exclude reference="Slc-D7-6ui"/>
+                                <exclude reference="nDD-Ba-MoG"/>
+                                <exclude reference="t1S-tm-YYj"/>
+                                <exclude reference="zcd-zb-svD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Rcb-Wd-5qe"/>
+                                <exclude reference="TpC-Zb-6Rp"/>
+                                <include reference="VS8-ru-uHa"/>
+                                <include reference="j6b-Lw-rzu"/>
+                                <include reference="BhW-BK-6tX"/>
+                                <include reference="OWV-C2-vgb"/>
+                                <include reference="nDD-Ba-MoG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KY6-EZ-dII"/>
+                                <include reference="h1b-Uq-FuI"/>
+                                <include reference="Rob-cU-kBf"/>
+                                <include reference="Slc-D7-6ui"/>
+                                <include reference="t1S-tm-YYj"/>
+                                <include reference="zcd-zb-svD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="landscapeConstraints" destination="j6b-Lw-rzu" collectionClass="NSMutableArray" id="WXd-27-6f6"/>
+                        <outletCollection property="landscapeConstraints" destination="VS8-ru-uHa" collectionClass="NSMutableArray" id="9s6-e7-Lo4"/>
+                        <outletCollection property="landscapeConstraints" destination="nDD-Ba-MoG" collectionClass="NSMutableArray" id="dEv-OW-qyT"/>
+                        <outletCollection property="landscapeConstraints" destination="Rcb-Wd-5qe" collectionClass="NSMutableArray" id="VMh-kH-HlK"/>
+                        <outletCollection property="landscapeConstraints" destination="OWV-C2-vgb" collectionClass="NSMutableArray" id="gl7-7M-WMQ"/>
+                        <outletCollection property="portraitConstraints" destination="KY6-EZ-dII" collectionClass="NSMutableArray" id="XEP-J5-Nxe"/>
+                        <outletCollection property="portraitConstraints" destination="pCQ-fa-lse" collectionClass="NSMutableArray" id="swN-4A-sRv"/>
+                        <outletCollection property="portraitConstraints" destination="fii-jV-Tq5" collectionClass="NSMutableArray" id="dbc-r4-toO"/>
+                        <outletCollection property="portraitConstraints" destination="Rob-cU-kBf" collectionClass="NSMutableArray" id="7f2-wQ-aVK"/>
+                        <outletCollection property="portraitConstraints" destination="zcd-zb-svD" collectionClass="NSMutableArray" id="Tpu-qk-Qmx"/>
+                        <outletCollection property="portraitConstraints" destination="Slc-D7-6ui" collectionClass="NSMutableArray" id="E3g-A2-aPn"/>
+                        <outletCollection property="portraitConstraints" destination="t1S-tm-YYj" collectionClass="NSMutableArray" id="pdS-dr-uSD"/>
+                        <outletCollection property="portraitConstraints" destination="h1b-Uq-FuI" collectionClass="NSMutableArray" id="bXa-Cd-jYB"/>
+                        <outletCollection property="landscapeConstraints" destination="IdM-0H-i64" collectionClass="NSMutableArray" id="odO-yf-6fn"/>
+                        <outletCollection property="landscapeConstraints" destination="BhW-BK-6tX" collectionClass="NSMutableArray" id="MDP-yd-nhN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="77" y="-601"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
